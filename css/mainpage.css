@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
 
+/*Large Body Elements*/
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -30,7 +32,14 @@ main {
 
 section {
     overflow: auto;
+    width: 50%;
+    margin: auto;
+    max-width: 500px;
+    padding-top: 10px;
+    min-width: 500px;
 }
+
+/*Header Slide*/
 
 #header-text {
     position: fixed;
@@ -55,7 +64,51 @@ section {
     font-size: 2rem;
 }
 
-#intro-section {
-    width: 50%;
+/*Job Timeline*/
+
+.job-image {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%/50%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.job-image img {
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
     margin: auto;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    height: 100px;
+    padding-left: 20px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    word-wrap: normal;
+}
+
+.job-title-div {
+    height: 100px;
+}
+
+.job-description {
+    margin-left: 40px;
+    border-left-color: white;
+    border-left-width: 20px;
+    border-left-style: solid;
+    padding-left: 90px;
+}
+
+.job-description * {
+    margin: 0;
+    padding: 0;
 }
