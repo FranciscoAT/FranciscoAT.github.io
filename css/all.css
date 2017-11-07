@@ -60,29 +60,35 @@ div {
 
 /* Nav CSS */
 .nav {
-    padding-top: 1em;
+    /* background: rgba(148, 142, 142, 0.801); */
     height: 60px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* width: 100%; */
+    grid-template-columns: 2em 1fr 0.7fr 2em;
+    position: static;
 }
 
-.nav-logo img {
+.nav-logo-wrapper {
+    grid-column-start: 2;
+    align-self: center;
     max-height: 100%;
 }
 
 .nav-logo {
-    display: inline-block;
-    max-width: 100%;
-    height: inherit;
+    max-height: 80%;
 }
 
 .nav-links {
-    display: inline-block;
-    text-align: right;
+    grid-column-start: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: end;
+    align-items: center;
+    justify-items: stretch;
 }
 
-.nav-links ul li {
-    font-size: 1.3em;
+.nav-links div {
+    text-align: center;
 }
 
 /* Intro CSS */
