@@ -185,3 +185,18 @@ body {
 .transparent-background {
     background: rgba(0,0,0,0.4);
 }
+
+/** Featured Projects **/
+.featured-projects {
+    margin-top: 2em;
+    display: grid;
+    grid-template-areas:
+        "project-1 project-2"
+        "project-3 project-4";
+    grid-gap: 1em 1em;
+}
+
+.project {
+    /* height: 100px; */
+    border: 1px solid black;
+}
