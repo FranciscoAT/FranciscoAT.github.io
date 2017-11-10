@@ -15,7 +15,7 @@ body {
 /* Common Classes */
 .gutter-wrapper {
     display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 .gutter-wrapper-small {
@@ -146,19 +146,33 @@ body {
     height: 500px;
     background: url('../assets/ottawa-skyline.jpg');
     grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .intro-blurb {
     padding-top: 2em;
     font-size: calc(0.9em + 1vmin);
-    background: rgba(0,0,0,0.6);
+    grid-row: 1;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.intro-links-wrapper {
+    grid-row: 2;
+    vertical-align: center;
 }
 
 .intro-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 
 .intro-links img {
-    max-height: 50%;
+    max-width: 50%;
+}
+
+.transparent-background {
+    background: rgba(0,0,0,0.4);
 }
