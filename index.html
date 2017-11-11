@@ -8,6 +8,7 @@
         <title>Francisco Trindade</title>
 
         <!-- Javascript -->
+        <script src="./js/jquery-3.2.1.min.js"></script>
         <script src="./js/site.js"></script>
 
         <!-- Stylesheets -->
@@ -19,7 +20,7 @@
         <!-- Begin nav -->
         <section class="nav ubuntu-text">
             <div class="nav-logo-wrapper">
-                <a href="#">
+                <a href="#intro">
                     <img class="nav-logo" src="assets/aquila.png">
                 </a>
             </div>
@@ -28,7 +29,7 @@
                     <a class="bottom-border-hover" href="#">Resume</a>
                 </div>
                 <div>
-                    <a class="bottom-border-hover" href="#">Projects</a>
+                    <a class="bottom-border-hover" href="#featured-projects">Projects</a>
                 </div>
                 <div>
                     <a class="bottom-border-hover" href="#">History</a>
@@ -40,14 +41,15 @@
         </section>
         <!-- End nav -->
         <!-- Begin wrapper -->
-        <div class="wrapper gutter-wrapper ubuntu-text">
+        <section class="wrapper gutter-wrapper ubuntu-text">
             <!-- Begin intro -->
-            <div class="intro white-text center-text gutter-wrapper">
+            <section id="intro" class="intro white-text center-text gutter-wrapper">
                 <div class="intro-blurb gutter-content transparent-background">
                     <h1>Francisco Trindade</h1>
                     <p>
-                        Hi, I'm Francisco. Currently a comptuer science student starting fourth year at the University of Ottawa. I am a full stack developer and love to create great applications. My work is mainly focused in Node.js, but I always love learning new things. Let's build something great together!
+                        Hi, I'm Francisco. Currently a computer science student starting fourth year at the University of Ottawa. I am a full stack developer and love to create great applications. My work is mainly focused in Node.js, but I always love learning new things.
                     </p>
+                    <p>Let's build something great together!</p>
                 </div>
                 <div class="intro-links-wrapper gutter-content transparent-background gutter-wrapper">
                     <div class="intro-links gutter-content">
@@ -73,34 +75,38 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- End intro -->
             <!-- Start Featured Projects -->
-            <div class="featured-projects gutter-content">
-                <div class="project" style="grid-area: project-1">
-                    <h3>Selectable Chart</h3>
-                    <p>Chart that can add and remove series in an elegant fashion</p>
-                    <p> Built off of <a href="#">AmCharts.js</a></p>
-                    <div class="project-link">View it online &#8594;</div>
+            <section id="featured-projects" class="featured-projects-wrapper gutter-content section-padding">
+                <h2 class="section-header" style="grid-area: header">Featured Projects</h2>
+                <div class="project-card" style="grid-area: project-1">
+                    <img class="project-card-image" src="./assets/selectable-chart-image.png">
+                    <div class="project-card-text">
+                        <h3>Selectable Chart</h3>
+                        <p>Chart that can add and remove series in an elegant fashion</p>
+                        <p> Built off of <a href="#">AmCharts.js</a></p>
+                        <div class="project-link">View it online &#8594;</div>
+                    </div>
                 </div>
-                <div class="project" style="grid-area: project-2">
+                <div class="project-card" style="grid-area: project-2">
                     <h3>Movie Database</h3>
                     <p>Node.js project where it recommend and display movies</p>
                     <div class="project-link">View it on GitHub &#8594;</div>
                 </div>
-                <div class="project" style="grid-area: project-3">
+                <div class="project-card" style="grid-area: project-3">
                     <h3>Currency Converter - Chart</h3>
                     <p>Integrated the chart that will change to reflect the currency being converted</p>
                     <div class="project-link">View it online &#8594;</div>
                 </div>
-                <div class="project" style="grid-area: project-4">
+                <div class="project-card" style="grid-area: project-4">
                     <h3>Course Selector (WIP)</h3>
                     <p>Node.js project that will catagorize uOttawa courses and allow student to organize them</p>
                     <div class="project-link">View it on GitHub &#8594;</div>
                 </div>
-            </div>
+            </section>
             <!-- End Featured Projects -->
-        </div>
+        </section>
         <!-- End wrapper -->
         <div class="scroll"></div>
     </body>
