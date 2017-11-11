@@ -90,6 +90,18 @@ body {
     padding-top: 1em;
 }
 
+.inline-link {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.6;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+}
+
+.inline-link:hover {
+    transition: 0.4s ease;
+    opacity: 1;
+}
+
 /* Nav CSS */
 .nav {
     min-width: inherit;
@@ -168,6 +180,7 @@ body {
     height: inherit;
     width: 100%;
     content: "";
+    background-size: cover;
 }
 
 .intro::after {
@@ -229,24 +242,47 @@ body {
 }
 
 .project-card-text {
-    padding: 1em;
+    padding: 10px 10px 0 10px;
+}
+
+.project-card-text p:last-of-type {
+    margin-bottom: 0;
 }
 
 .project-card {
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
     transition: 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: calc(0.5em + 1vmin);
 }
 
 .project-card:hover {
-    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+}
+
+.project-card:hover .project-card-image {
+    transform: scale(1.1);
+}
+
+.project-card::after {
+    position: relative;
+    float: right;
+    background: url('../assets/right-arrow.svg') no-repeat center;
+    width: 45px;
+    height: 45px;
+    content: "";
+    transition: all 0.5s ease-out;
+    padding: 1em;
+}
+
+.project-card:hover::after {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 .project-card-image {
     max-width: 100%;
+    transition: 0.3s ease;
+    height: 250px;
 }
-
-/* .project-link {
-    position: relative;
-    right: 0;
-    bottom: 0;
-} */
