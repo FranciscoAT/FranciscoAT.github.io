@@ -283,6 +283,9 @@ body {
 
 .project-card-image {
     max-width: 100%;
+    width: 100%;
     transition: 0.3s ease;
     height: 250px;
 }
+
+/** History Section **/
