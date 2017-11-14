@@ -12,13 +12,13 @@
         <script src="./js/site.js"></script>
 
         <!-- Stylesheets -->
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="./css/all.css">
     </head>
 
     <body>
         <!-- Begin nav -->
-        <section class="nav ubuntu-text">
+        <section class="nav roboto-text">
             <div class="nav-logo-wrapper">
                 <a href="#intro">
                     <img class="nav-logo" src="assets/aquila.png">
@@ -41,11 +41,12 @@
         </section>
         <!-- End nav -->
         <!-- Begin wrapper -->
-        <section class="wrapper gutter-wrapper ubuntu-text">
+        <section class="wrapper gutter-wrapper roboto-text">
             <!-- Begin intro -->
             <section id="intro" class="intro white-text center-text gutter-wrapper">
                 <div class="intro-blurb gutter-content transparent-background">
-                    <h1>Francisco Trindade</h1>
+                    <h1 class="intro-title">Francisco Trindade</h1>
+                    <p class="intro-subtitle">Full Stack Developer | </p>
                     <p>
                         Hi, I'm Francisco. Currently a computer science student starting fourth year at the University of Ottawa. I am a full stack developer and love to create great applications. My work is mainly focused in Node.js, but I always love learning new things.
                     </p>
@@ -78,44 +79,52 @@
             </section>
             <!-- End intro -->
             <!-- Start Featured Projects -->
-            <section id="featured-projects" class="featured-projects-wrapper gutter-content section-padding">
+            <section id="featured-projects" class="featured-projects-wrapper gutter-content section-padding-small">
                 <h2 class="section-header" style="grid-area: header">Featured Projects</h2>
 
-                <div class="project-card" style="grid-area: project-1" onclick="location.href='http://www.bankofcanada.ca/rates/banking-and-financial-statistics/bank-of-canada-assets-and-liabilities-month-end-formerly-b1/'">
-                    <img class="project-card-image" src="./assets/selectable-chart-image.png">
-                    <div class="project-card-text">
-                        <h3>Selectable Chart</h3>
-                        <p>A custom way to display chart series. That allows user to add and remove many series to and from the chart in an elegant fashion.</p>
-                        <p>Built as a custom plugin to <a class="inline-link" href="https://www.amcharts.com/">AmCharts.js</a></p>
+                <a class="div-link" style="grid-area: project-1" href="http://www.bankofcanada.ca/rates/banking-and-financial-statistics/bank-of-canada-assets-and-liabilities-month-end-formerly-b1/">
+                    <div class="project-card" style="grid-area: project-1">
+                        <div class="project-card-image" style="background-image: url('./assets/selectable-chart-image.png')"></div>
+                        <div class="project-card-text">
+                            <h3>Selectable Chart</h3>
+                            <p>A custom way to display chart series. That allows user to add and remove many series to and from the chart in an elegant fashion.</p>
+                            <p>Built as a custom plugin to <a class="inline-link" href="https://www.amcharts.com/">AmCharts.js</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card" style="grid-area: project-2" onclick="location.href='https://github.com/FranciscoAT/movie_db'">
-                    <img class="project-card-image" src="./assets/movie-image.jpeg">
-                    <div class="project-card-text">
-                        <h3>Movie Reccomendation Web App</h3>
-                        <p>Node.js project a user can query for movies and be returned with recommendations with information. The recommendations where pulled in to by using the <a class="inline-link" href="https://tastedive.com/read/api">TasteKid API</a>, and the information on the movies were pulled using the <a class="inline-link" href="http://www.omdbapi.com/">OMDB API</a>.</p>
+                </a>
+                <a class="div-link" style="grid-area: project-2" href="https://www.github.com/FranciscoAT/movie_db">
+                    <div class="project-card" style="grid-area: project-2">
+                        <div class="project-card-image" style="background-image: url('./assets/movie-image.jpeg')"></div>
+                        <div class="project-card-text">
+                            <h3>Movie Reccomendation Web App</h3>
+                            <p>Node.js project a user can query for movies and be returned with recommendations with information. The recommendations where pulled in to by using the <a class="inline-link" href="https://tastedive.com/read/api">TasteKid API</a>, and the information on the movies were pulled using the <a class="inline-link" href="http://www.omdbapi.com/">OMDB API</a>.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card" style="grid-area: project-3" onclick="location.href='https://bankofcanada.ca/'">
-                    <img class="project-card-image" src="./assets/homepage-converter.png">
-                    <div class="project-card-text">
-                        <h3>Currency Converter - Chart</h3>
-                        <p>Integrated a chart that will change to reflect the currency being converted and display the past exchange rates.</p>
-                        <p>Built by plugging in <a class="inline-link" href="https://www.amcharts.com/">AmCharts.js</a> to the currency converter tool.</p>
+                </a>
+                <a class="div-link" style="grid-area: project-3" href="http://www.bankofcanada.ca/">
+                    <div class="project-card" style="grid-area: project-3">
+                        <div class="project-card-image" style="background-image: url('./assets/homepage-converter.png')"></div>
+                        <div class="project-card-text">
+                            <h3>Currency Converter - Chart</h3>
+                            <p>Integrated a chart that will change to reflect the currency being converted and display the past exchange rates.</p>
+                            <p>Built by plugging in <a class="inline-link" href="https://www.amcharts.com/">AmCharts.js</a> to the currency converter tool.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card" style="grid-area: project-4" onclick="location.href='https://github.com/philxchen/CookingWithGarzon'">
-                    <img class="project-card-image" src="./assets/cooking-image.jpg">
-                    <div class="project-card-text">
-                        <h3>Cooking Manager Android Application</h3>
-                        <p>An Android cooking manager that would allow users to create recipes and manage them easily. Additionally allowed for a shopping mode that would allow for users to tell how much more of an item they need for the recipes in their cart.</p>
+                </a>
+                <a class="div-link" style="grid-area: project-4" href="https://github.com/philxchen/CookingWithGarzon">
+                    <div class="project-card" style="grid-area: project-4">
+                        <div class="project-card-image" style="background-image: url('./assets/cooking-image.jpg')"></div>
+                        <div class="project-card-text">
+                            <h3>Cooking Manager Android Application</h3>
+                            <p>An Android cooking manager that would allow users to create recipes and manage them easily. Additionally allowed for a shopping mode that would allow for users to tell how much more of an item they need for the recipes in their cart.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </section>
             <!-- End Featured Projects -->
             <!-- Begin History -->
-            <section id="history-section" class="history-section-wrapper gutter-content section-padding">
-                <h2 class="section-header">Work History</h2>
+            <section id="history-section" class="history-section-wrapper gutter-content section-padding-large">
+                <h2 class="section-header ">Work History</h2>
             </section>
             <!-- End History -->
         </section>
