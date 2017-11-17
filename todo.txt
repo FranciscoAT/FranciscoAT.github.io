@@ -1,5 +1,0 @@
-- make name slightly larger
-- sub text slightly smaller
-- Re-wirte blurb
-- brighter colour red
-- maybe move face into intro (?)
