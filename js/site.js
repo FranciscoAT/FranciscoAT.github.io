@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    //Run opacity button
+    updateHomeButton();
 
     //Easy Scrolling
     $('a[href^="#"]').click(function(e) {
@@ -6,29 +8,30 @@ $(document).ready(function() {
         console.log($target.offset().top);
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $target.offset().top - 60
+            scrollTop: $target.offset().top - 80
         }, 500);
     });
 
-    // Replace select SVG's with the inline SVG
-    // $('.project-card-arrow').each(function() {
-    //     console.log('hit');
-    //     var $img = $(this);
-    //     var imgClass = $img.attr('class');
-    //     var imgURL = $img.attr('url');
+    //On Scroll Buttons
+    $(window).scroll(function() {
+        updateHomeButton();
+    });
 
-    //     $.get(imgURL, function(data) {
-    //         var $svg = $(data).find('svg');
+    function updateHomeButton() {
+        $home = $('.nav-home');
+        
+        if($(window).scrollTop() > 150) {
+            $home.css("opacity", 1);
+            $home.show();
+            return;
+        }
 
-    //         if (typeof imgClass !== 'undefine') {
-    //             $svg = $svg.attr('class', imgClass);
-    //         }
+        if ($(window).scrollTop() == 0) {
+            $home.hide();
+        } else {
+            $home.show();
+        }
 
-    //         img.replaceWith($svg);
-    //     }, 'xml');
-    // });
-
-    //Hover for arrow SVG
-    // $('.project-card')
-    
+        $home.css("opacity", $(window).scrollTop()/150);
+    }
 });
