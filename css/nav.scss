@@ -1,0 +1,78 @@
+/* Nav CSS */
+.nav {
+    height: 80px;
+    display: grid;
+    grid-template-columns: 2em auto 2em;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.6);
+    z-index: 2;
+    top: -1px;
+}
+
+.nav-header {
+    height: 150px;
+    position: relative;
+    display: grid;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav-header a {
+    align-self: center;
+    justify-self: center;
+}
+
+.nav-header img {
+    max-height: 80%;
+    border-radius: 50%;
+}
+
+.nav-logo {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.nav-home {
+    transform: rotate(-90deg);
+    transition: all ease-in-out 0.3s;
+    display: none;
+    opacity: 0;
+}
+
+.nav-home:hover {
+    transform: scale(1.2) rotate(-90deg);
+}
+
+.nav-links {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.nav-links div {
+    text-align: center;
+}
+
+.nav-links div a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: calc(0.65em + 1vmin);
+    font-weight: 500;
+}
+
+.nav-links div a:hover {
+    color: rgba(0,0,0,1);
+}
