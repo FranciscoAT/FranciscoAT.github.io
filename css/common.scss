@@ -25,7 +25,7 @@ $default-red: rgb(255,36,36);
     }
 
     @media screen and (max-width: $break-medium){
-        grid-template-columns: 1fr 6fr 1fr;
+        grid-template-columns: 2px 6fr 2px;
     }
 
     @media screen and (max-width: $break-small) {
