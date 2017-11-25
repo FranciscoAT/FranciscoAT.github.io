@@ -29,7 +29,7 @@ $default-red: rgb(255,36,36);
     }
 
     @media (max-width: $break-small) {
-        grid-template-columns: 12px auto 12px;
+        grid-template-columns: 2px auto 2px;
     }
 }
 
