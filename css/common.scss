@@ -20,15 +20,15 @@ $default-red: rgb(255,36,36);
 .gutter-wrapper {
     display: grid;
 
-    @media (min-width: $break-large){
+    @media screen and (min-width: $break-large){
         grid-template-columns: 1fr 3fr 1fr;
     }
 
-    @media (max-width: $break-medium){
+    @media screen and (max-width: $break-medium){
         grid-template-columns: 1fr 6fr 1fr;
     }
 
-    @media (max-width: $break-small) {
+    @media screen and (max-width: $break-small) {
         grid-template-columns: 2px auto 2px;
     }
 }
@@ -54,7 +54,7 @@ $default-red: rgb(255,36,36);
 /** Text Size Defaults **/
 p, a { font-size: 16px; }
 
-@media (min-width: $break-large){
+@media screen and (min-width: $break-large){
     p, a {
         line-height: 1.375em;
     }
@@ -72,7 +72,7 @@ p, a { font-size: 16px; }
     }
 }
 
-@media (max-width: $break-medium){
+@media screen and (max-width: $break-medium){
     p, a {
         line-height: 1.375em;
     }
@@ -90,7 +90,7 @@ p, a { font-size: 16px; }
     }
 }
 
-@media (max-width: $break-small) {
+@media screen and (max-width: $break-small) {
     p, a {
         line-height: 1.25em;
     }
