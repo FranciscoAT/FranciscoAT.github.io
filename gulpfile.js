@@ -5,11 +5,13 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var minify = require('gulp-clean-css');
 var prefixer = require('gulp-autoprefixer');
+var rename = require('gulp-rename');
 
 gulp.task('compile-sass', function() {
     return gulp.src('css/*.scss')
+        .pipe(concat('styles.scss'))
         .pipe(sass())
-        .pipe(concat('styles.min.css'))
+        .pipe(rename('styles.min.css'))
         .pipe(prefixer())
         .pipe(minify({compatibility:'*'}))
         .pipe(gulp.dest('css/'))

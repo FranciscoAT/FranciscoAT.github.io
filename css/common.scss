@@ -8,23 +8,27 @@ body {
     margin: 0;
 }
 
-/** Gutter **/
+/** Break Sizes **/
 $break-large: 1008px;
 $break-medium: 1007px;
 $break-small: 640px;
 
+/** Colours **/
+$default-red: rgb(255,36,36);
+
+/** Gutter **/
 .gutter-wrapper {
     display: grid;
 
-    @media screen and (min-width: $break-large){
+    @media (min-width: $break-large){
         grid-template-columns: 1fr 3fr 1fr;
     }
 
-    @media screen and (max-width: $break-medium){
+    @media (max-width: $break-medium){
         grid-template-columns: 1fr 6fr 1fr;
     }
 
-    @media screen and (max-width: $break-small) {
+    @media (max-width: $break-small) {
         grid-template-columns: 12px auto 12px;
     }
 }
@@ -40,12 +44,71 @@ $break-small: 640px;
 }
 
 .white-text {
-    color: rgba(0,0,0,0.9);
+    color: rgba(0,0,0,1);
 }
 
 .center-text {
     text-align: center;
 }
+
+/** Text Size Defaults **/
+p { font-size: 16px; }
+
+@media (min-width: $break-large){
+    p {
+        line-height: 1.375em;
+    }
+    h1 {
+        font-size: 48px;
+        line-height: 1.05em;
+    }
+    h2  {
+        font-size: 36px;
+        line-height: 1.25em;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 1.25em;
+    }
+}
+
+@media (max-width: $break-medium){
+    p {
+        line-height: 1.375em;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 1.125em;
+    }
+    h2  {
+        font-size: 32px;
+        line-height: 1.25em;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 1.25em;
+    }
+}
+
+@media (max-width: $break-small) {
+    p {
+        line-height: 1.25em;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 1.25em;
+    }
+    h2  {
+        font-size: 26px;
+        line-height: 1.15em;
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 1.15em;
+    }
+}
+
+
 
 /** Links **/
 

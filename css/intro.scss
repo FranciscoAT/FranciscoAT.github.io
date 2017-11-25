@@ -11,7 +11,7 @@
     grid-column: 1 / 4;
     grid-row: 1 / 3;
     filter:  blur(5px);
-    background: linear-gradient(rgba(255,69,0,0.4), rgba(255,69,0,0.4)), url('../assets/ottawa-skyline.jpg');
+    background: linear-gradient(rgba(255, 36, 36, 0.4), rgba(255,36,36,0.4)), url('../assets/ottawa-skyline.jpg');
     top: 0;
     height: inherit;
     width: 100%;
@@ -36,7 +36,6 @@
 
 .intro-blurb {
     padding-top: 2em;
-    font-size: calc(0.9em + 1vmin);
     grid-row: 1;
     padding-left: 2em;
     padding-right: 2em;
@@ -62,7 +61,6 @@
 
 .intro-subtitle {
     margin-top: 0;
-    font-size: calc(0.55em + 1vmin);
     color: rgba(0,0,0,0.7);
 }
 
