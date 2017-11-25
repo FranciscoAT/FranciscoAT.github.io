@@ -18,7 +18,13 @@ $(document).ready(function() {
     });
 
     function updateHomeButton() {
-        $home = $('.nav-home');
+
+        $home = $('.nav__home');
+
+        if ($(window).width() <= 790) {
+            $home.hide();
+            return;
+        }
         
         if($(window).scrollTop() > 150) {
             $home.css("opacity", 1);

@@ -10,7 +10,7 @@ var rename = require('gulp-rename');
 gulp.task('compile-sass', function() {
     return gulp.src('css/*.scss')
         .pipe(concat('styles.scss'))
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(rename('styles.min.css'))
         .pipe(prefixer())
         .pipe(minify({compatibility:'*'}))

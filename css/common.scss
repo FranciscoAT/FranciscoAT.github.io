@@ -11,7 +11,7 @@ body {
 /** Break Sizes **/
 $break-large: 1008px;
 $break-medium: 1007px;
-$break-small: 640px;
+$break-small: 673px;
 
 /** Colours **/
 $default-red: rgb(255,36,36);
@@ -52,10 +52,10 @@ $default-red: rgb(255,36,36);
 }
 
 /** Text Size Defaults **/
-p { font-size: 16px; }
+p, a { font-size: 16px; }
 
 @media (min-width: $break-large){
-    p {
+    p, a {
         line-height: 1.375em;
     }
     h1 {
@@ -73,7 +73,7 @@ p { font-size: 16px; }
 }
 
 @media (max-width: $break-medium){
-    p {
+    p, a {
         line-height: 1.375em;
     }
     h1 {
@@ -91,7 +91,7 @@ p { font-size: 16px; }
 }
 
 @media (max-width: $break-small) {
-    p {
+    p, a {
         line-height: 1.25em;
     }
     h1 {
@@ -115,7 +115,7 @@ p { font-size: 16px; }
 .bottom-border-hover::after {
     content: '';
     display: block;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid $default-red;
     width: 0;
     right: 50%;
     top: 1.3em;
@@ -127,7 +127,7 @@ p { font-size: 16px; }
 .bottom-border-hover::before {
     content: '';
     display: block;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid $default-red;
     width: 0;
     left: 50%;
     top: 1.3em;
@@ -142,14 +142,14 @@ p { font-size: 16px; }
 
 .inline-link {
     text-decoration: none;
-    color: inherit;
-    opacity: 0.6;
-    border-bottom: 1px solid rgba(0,0,0,0.6);
+    color: rgba(0,0,0,0.7);
 }
 
 .inline-link:hover {
     transition: 0.4s ease;
-    opacity: 1;
+    // color: rgba(0,0,0,1);
+    background-color: rgba($default-red, 0.2);
+    border-radius: 15%;
 }
 
 .div-link {
