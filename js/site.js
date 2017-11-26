@@ -39,4 +39,12 @@ $(document).ready(function() {
 
         $home.css("opacity", $(window).scrollTop()/150);
     }
+
+    $(window).on('resize', function() {
+        if ($(window).width() <= 790) {
+            $('.nav__home').hide();
+        } else {
+            updateHomeButton();
+        }
+    })
 });
