@@ -4,6 +4,7 @@
     <head>
         <!-- Meta Stuff -->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
 
         <!-- Titles / Etc... -->
         <title>Francisco Trindade</title>
@@ -40,13 +41,10 @@
                     <a class="bottom-border-hover nav__links--link" href="#featured-projects">Projects</a>
                 </div>
                 <div>
-                    <a class="bottom-border-hover nav__links--link" href="#history-section">History</a>
+                    <a class="bottom-border-hover nav__links--link" href="#history">History</a>
                 </div>
                 <div>
-                    <a class="bottom-border-hover nav__links--link" href="#skills-section">Skills</a>
-                </div>
-                <div>
-                    <a class="bottom-border-hover nav__links--link" href="#">Contact Me</a>
+                    <a class="bottom-border-hover nav__links--link" href="#skills">Skills</a>
                 </div>
             </div>
         </section>
@@ -83,6 +81,11 @@
                         <div>
                             <a href="https://twitter.com/franciscot_dev">
                                 <img src="./assets/twitter-logo-button.svg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:hello@franciscot.me">
+                                <img src="./assets/mail.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -138,27 +141,53 @@
             </section>
             <!-- End Featured Projects -->
             <!-- Begin History -->
-            <section id="history-section" class="history-section-wrapper gutter-content section-padding-large">
+            <section id="history" class="history gutter-content section-padding-large">
                 <h2 class="section-header ">Work History</h2>
 
-                <div class="history-block">
-                    <div class="history-block-title">
-                        <img src="./assets/github-logo.svg">
-                        <h3>Bank of Canda | Web Developer</h3>
-                        <p>Apr 1996 - June 2017</p>
+                <div class="history__block">
+                    <a class="history__block--image-wrapper" href="http://www.bankofcanada.ca/">
+                        <img class="history__block--image" src="./assets/bank-of-canada.png" alt="">
+                    </a>
+                    <div class="history__block--text-wrapper">
+                        <h3 class="history__block--text-title">Bank of Canada | <span class="lighter-text">Web Developer Intern</span></h3>
+                        <p class="history__block--text-dates">January to April 2017 &<br> August to December 2017</p>
+                        <p class="history__block--text">I worked here for two four month terms. It was an excellent experience where I expanded my skills in Web Development as well as taking the time to learn and engage in AGILE development. I was responsible for implementing features, fixing bugs, and suggesting improvements across the five sites run by the Web team at the Bank. The team there was a great one to work with and encouraged me to expand my knowledge, particularily in learning about design systems and how they can help a site scale easily in size while maintaining consistency.</p>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda at dolores vitae veniam perspiciatis sint corporis incidunt iusto, velit laboriosam.</p>
+                </div>
+                <div class="history__block">
+                    <a class="history__block--image-wrapper" href="http://www.coriant.com/company/">
+                        <img class="history__block--image" src="./assets/coriant.png" alt="">
+                    </a>
+                    <div class="history__block--text-wrapper">
+                        <h3 class="history__block--text-title">Coriant, Inc. | <span class="lighter-text">Software Developer Intern</span></h3>
+                        <p class="history__block--text-dates">June to September 2016</p>
+                        <p class="history__block--text">My first official co-op worked term was at Coriant, Inc.. It was an excellent experience as I was in charge of working with Jira to handle the workflow. It allowed me to learn about many different work process in particular AGILE. I worked heavily with Groovy and Python to accomplish changes in Jira to remove the tedious book keeping for tasks. In return it improved efficiency and allowed managers and developers to quickly understand the workflow with minimal explination.</p>
+                    </div>
+                </div>
+                <div class="history__block">
+                    <a class="history__block--image-wrapper" href="http://justfood.ca/">
+                        <img class="history__block--image" src="./assets/just-food.png" alt="">
+                    </a>
+                    <div class="history__block--text-wrapper">
+                        <h3 class="history__block--text-title">Just Food | <span class="lighter-text">Network Digital Information Coordinator</span></h3>
+                        <p class="history__block--text-dates">June to September 2016</p>
+                        <p class="history__block--text">Worked here in my first summer of university. It was an excellent opportunity that allowed me apply my skills in developing solutions on how to share information within the community gardening network of Ottawa. I built several tools that allowed for easier upkeep of information on the website. Additionally developed the ground work for an information sharing resource that can be used by the public and the information on it updated by them.</p>
                     </div>
                 </div>
             </section>
-            <!-- End History -->
-            <!-- Start Skills -->
-            <!-- <section id="skills-section" class="skills-section-wrapper gutter-content section-padding-large">
+            <section id="skills" class="skills gutter-content section-padding-small">
                 <h2 class="section-header">Skills</h2>
-            </section> -->
-            <!-- End Skills -->
+            </section>
+            <!-- End History -->
+            <!-- Start Footer -->
+            <footer id="contact-me" class="footer gutter-wrapper">
+                <div class="footer__content gutter-content">
+                    <p class="minimum-margin"><a class="inline-link" href="mailto:hello@franciscot.me">hello@franciscot.me</a></p>
+                    <p class="minimum-margin"><a class="inline-link" href="https://github.com/FranciscoAT/FranciscoAT.github.io">View this site on GitHub</a></p>
+                    <p class="small-text minimum-margin">© 2017. All Rights Reserved.</p>
+                </div>
+            </footer>
+            <!-- End Footer -->
         <!-- End wrapper -->
-        <div class="scroll"></div>
     </body>
 </html>
