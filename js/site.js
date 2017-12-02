@@ -46,5 +46,15 @@ $(document).ready(function() {
         } else {
             updateHomeButton();
         }
-    })
+    });
+
+    $('.skill__show-button').on('click', function(e) {
+        let $additionalSkill = $(e.target).parent().find('.secondary-skills');
+        let $additionalTitle = $(e.target).parent().find('.skill-block__title-additional');
+        let $button = $(e.target);
+        $additionalSkill.slideToggle();
+        $additionalTitle.slideToggle();
+        $button.toggleClass('skill__button-closed');
+        $button.toggleClass('skill__button-open');
+    });
 });

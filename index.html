@@ -4,7 +4,7 @@
     <head>
         <!-- Meta Stuff -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Francisco Trindade's Personal Website. Avid Full Stack Developer attending University of Ottawa.">
         <meta name="theme-color" content="##ff2424">
 
@@ -43,10 +43,10 @@
                     <a class="bottom-border-hover nav__links--link" href="#featured-projects">Projects</a>
                 </div>
                 <div>
-                    <a class="bottom-border-hover nav__links--link" href="#history">History</a>
+                    <a class="bottom-border-hover nav__links--link" href="#skills">Skills</a>
                 </div>
                 <div>
-                    <a class="bottom-border-hover nav__links--link no-right-border" href="#skills">Skills</a>
+                    <a class="bottom-border-hover nav__links--link no-right-border" href="#history">History</a>
                 </div>
             </div>
         </section>
@@ -73,11 +73,6 @@
                         <div>
                             <a href="https://www.linkedin.com/in/francisco-trindade-b07386a9/" alt="LinkedIn Link">
                                 <img src="./assets/linkedin-logo.svg" alt="LinkedIn Logo">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://stackoverflow.com/users/6494939/francisco" alt="StackOverflow Link">
-                                <img src="./assets/stack-overflow.svg" alt="StackOverflow Logo">
                             </a>
                         </div>
                         <div>
@@ -142,8 +137,93 @@
                 </div>
             </section>
             <!-- End Featured Projects -->
+            <!-- Start Skills -->
+            <section id="skills" class="skills gutter-content section-padding-small">
+                <h2 class="section-header">Skills</h2>
+                <div class="skill-block">
+                    <h3 class="skill-block__title">Software Languages</h3>
+                    <ul class="primary-skills skills__skills-list">
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ul>
+                    <img class="skill__show-button skill__button-closed" src="./assets/right-arrow.svg" alt="show-hide more skills">
+                    <h4 class="skill-block__title-additional">Additional</h4>
+                    <ul class="secondary-skills skills__skills-list">
+                        <li>Java</li>
+                        <li>C</li>
+                        <li>Shell Scripting</li>
+                        <li>Groovy</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h3 class="skill-block__title">Frameworks</h3>
+                    <ul class="primary-skills skills__skills-list">
+                        <li>Node.js</li>
+                        <li>jQuery</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h3 class="skill-block__title">Technologies</h3>
+                    <ul class="primary-skills skills__skills-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>LESS</li>
+                        <li>PostgrSQL</li>
+                        <li>MySQL</li>
+                    </ul>
+                    <img class="skill__show-button skill__button-closed" src="./assets/right-arrow.svg" alt="show-hide more skills">
+                    <h4 class="skill-block__title-additional">Additional</h4>
+                    <ul class="secondary-skills skills__skills-list">
+                        <li>RESTful APIs</li>
+                        <li>SCSS</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h3 class="skill-block__title">Tools</h3>
+                    <ul class="primary-skills skills__skills-list">
+                        <li>Git</li>
+                        <li>SVN</li>
+                        <li>PHPMyAdmin</li>
+                        <li>Gulp</li>
+                        <li>Jira</li>
+                        <li>Behat</li>
+                        <li>Visual Studio</li>
+                    </ul>
+                    <img class="skill__show-button skill__button-closed" src="./assets/right-arrow.svg" alt="show-hide more skills">
+                    <h4 class="skill-block__title-additional">Additional</h4>
+                    <ul class="secondary-skills skills__skills-list">
+                        <li>ANT</li>
+                        <li>Atom</li>
+                        <li>Sublime</li>
+                        <li>Cygwin</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h3 class="skill-block__title">Hardware</h3>
+                    <ul class="primary-skills skills__skills-list">
+                        <li>Linux (Debian)</li>
+                        <li>Windows</li>
+                    </ul>
+                    <img class="skill__show-button skill__button-closed" src="./assets/right-arrow.svg" alt="show-hide more skills">
+                    <h4 class="skill-block__title-additional">Additional</h4>
+                    <ul class="secondary-skills skills__skills-list">
+                        <li>Linux (Kali)</li>
+                    </ul>
+                </div>
+                <div class="skill-block">
+                    <h3 class="skill-block__title">Methods</h3>
+                    <ul class="primary-skills skills__skills-list">
+                        <li>AGILE (Scrum)</li>
+                        <li>Regression Testing</li>
+                        <li>Unit Testing</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- End Skills -->
             <!-- Begin History -->
-            <section id="history" class="history gutter-content section-padding-large">
+            <section id="history" class="history gutter-content section-padding-small">
                 <h2 class="section-header ">Work History</h2>
 
                 <div class="history__block">
@@ -151,7 +231,7 @@
                         <img class="history__block--image" src="./assets/bank-of-canada.png" alt="Bank of Canada Logo">
                     </a>
                     <div class="history__block--text-wrapper">
-                        <h3 class="history__block--text-title">Bank of Canada | <span class="lighter-text">Web Developer Intern</span></h3>
+                        <h3 class="history__block--text-title"><a class="header-link" href="http://www.bankofcanada.ca/" alt="Link to Bank of Canada">Bank of Canada</a> | <span class="lighter-text">Web Developer Intern</span></h3>
                         <p class="history__block--text-dates">January to April 2017 &<br> August to December 2017</p>
                         <p class="history__block--text">I worked here for two four month terms. It was an excellent experience where I expanded my skills in Web Development as well as taking the time to learn and engage in AGILE development. I was responsible for implementing features, fixing bugs, and suggesting improvements across the five sites run by the Web team at the Bank. The team there was a great one to work with and encouraged me to expand my knowledge, particularily in learning about design systems and how they can help a site scale easily in size while maintaining consistency.</p>
                     </div>
@@ -161,7 +241,7 @@
                         <img class="history__block--image" src="./assets/coriant.png" alt="Coriant Inc. Logo">
                     </a>
                     <div class="history__block--text-wrapper">
-                        <h3 class="history__block--text-title">Coriant, Inc. | <span class="lighter-text">Software Developer Intern</span></h3>
+                        <h3 class="history__block--text-title"><a class="header-link" href="http://www.coriant.com/company/" alt="Link to Coriant">Coriant, Inc.</a> | <span class="lighter-text">Software Developer Intern</span></h3>
                         <p class="history__block--text-dates">June to September 2016</p>
                         <p class="history__block--text">My first official co-op worked term was at Coriant, Inc.. It was an excellent experience as I was in charge of working with Jira to handle the workflow. It allowed me to learn about many different work process in particular AGILE. I worked heavily with Groovy and Python to accomplish changes in Jira to remove the tedious book keeping for tasks. In return it improved efficiency and allowed managers and developers to quickly understand the workflow with minimal explination.</p>
                     </div>
@@ -171,14 +251,11 @@
                         <img class="history__block--image" src="./assets/just-food.png" alt="Just Food Logo">
                     </a>
                     <div class="history__block--text-wrapper">
-                        <h3 class="history__block--text-title">Just Food | <span class="lighter-text">Network Digital Information Coordinator</span></h3>
+                        <h3 class="history__block--text-title"><a class="header-link" href="http://justfood.ca/" alt="Link to Just Food">Just Food</a> | <span class="lighter-text">Network Digital Information Coordinator</span></h3>
                         <p class="history__block--text-dates">June to September 2016</p>
                         <p class="history__block--text">Worked here in my first summer of university. It was an excellent opportunity that allowed me apply my skills in developing solutions on how to share information within the community gardening network of Ottawa. I built several tools that allowed for easier upkeep of information on the website. Additionally developed the ground work for an information sharing resource that can be used by the public and the information on it updated by them.</p>
                     </div>
                 </div>
-            </section>
-            <section id="skills" class="skills gutter-content section-padding-small">
-                <h2 class="section-header">Skills</h2>
             </section>
             <!-- End History -->
             <!-- Start Footer -->

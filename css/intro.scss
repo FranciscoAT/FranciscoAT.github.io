@@ -1,14 +1,10 @@
 /* Intro CSS */
 .intro {
-    height: 500px;
+    height: 550px;
     grid-column: 1 / 4;
     display: grid;
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
-
-    @media screen and (max-width: $break-small) {
-        overflow: visible;
-    }
 }
 
 .intro::before {
@@ -72,7 +68,7 @@
 
 .intro-links {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
 }
 

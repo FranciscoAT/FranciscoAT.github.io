@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html  {
+    overflow-x: hidden;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -51,7 +55,7 @@ $default-red: rgb(255,36,36);
 }
 
 .lighter-text {
-    opacity: 0.4;
+    color: #808080;
     font-weight: 200;
 }
 
@@ -78,6 +82,10 @@ p, a { font-size: 16px; }
         font-size: 28px;
         line-height: 1.25em;
     }
+    h4 {
+        font-size: 18px;
+        line-height: 1.22em;
+    }
 }
 
 @media screen and (max-width: $break-medium){
@@ -96,6 +104,10 @@ p, a { font-size: 16px; }
         font-size: 24px;
         line-height: 1.25em;
     }
+    h4 {
+        font-size: 18px;
+        line-height: 1.22em;
+    }
 }
 
 @media screen and (max-width: $break-small) {
@@ -113,6 +125,10 @@ p, a { font-size: 16px; }
     h3 {
         font-size: 22px;
         line-height: 1.15em;
+    }
+    h4 {
+        font-size: 18px;
+        line-height: 1.11em;
     }
 }
 
@@ -151,12 +167,18 @@ p, a { font-size: 16px; }
 .inline-link {
     text-decoration: none;
     color: rgba(0,0,0,0.7);
+    transition: 0.4s ease-in-out;
 }
 
-.inline-link:hover {
-    transition: 0.4s ease;
-    background-color: rgba($default-red, 0.2);
-    border-radius: 15%;
+.header-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    transition: 0.4s ease-in-out;
+}
+
+.inline-link:hover, .header-link:hover {
+    background-color: rgba($default-red, 0.4);
 }
 
 .div-link {

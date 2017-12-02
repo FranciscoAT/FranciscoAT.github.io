@@ -13,6 +13,16 @@
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 3em;
     margin-bottom: 20px;
+
+    @media screen and (max-width: $break-small) {
+        grid-template-areas:
+            "image"
+            "job-title"
+            "job-date"
+            "job-text";
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+    }
 }
 
 .history__block:last-of-type {
@@ -27,6 +37,14 @@
     max-width: 100%;
     max-height: 50%;
     margin-top: 40px;
+
+    @media screen and (max-width: $break-small) {
+        justify-self: center;
+        align-self: center;
+        max-height: 100%;
+        margin-top: 0;
+        height: 60px;
+    }
 }
 
 .history__block--image {
@@ -34,6 +52,10 @@
     max-width: 100%;
     max-height: 100%;
     transition: 0.3s ease-in-out;
+
+    @media screen and (max-width: $break-small) {
+        align-self: center;
+    }
 }
 
 .history__block--image:hover {
@@ -42,6 +64,11 @@
 
 .history__block--text-title {
     grid-area: job-title;
+
+    @media screen and (max-width: $break-small) {
+        justify-self: center;
+        text-align: center;
+    }
 }
 
 .history__block--text-dates {
@@ -49,6 +76,10 @@
     color: rgba(0,0,0,0.4);
 }
 
-.history__block--test {
+.history__block--text {
     grid-area: job-text;
+
+    @media screen and (max-width: $break-small) {
+        text-align: justify;
+    }
 }

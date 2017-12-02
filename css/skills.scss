@@ -2,3 +2,77 @@
 .skills {
     display: grid;
 }
+
+.skill-block {
+    display: grid;
+    grid-template-areas: 
+        "header primary button"
+        "additional secondary .";
+    align-items: start;
+    grid-template-columns: 3fr 3fr 1fr;
+    margin-top: 10px;
+}
+
+.skills__skills-list {
+    justify-self: start;
+    padding: 0 0 0 10px;
+    margin: 0;
+    align-self: center;
+}
+
+.skills__skills-list li{
+    display: inline-block;
+    background: rgba($default-red, 0.4);
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.skill-block__title {
+    grid-area: header;
+    margin: 0;
+    justify-self: end;
+    text-align: right;
+}
+
+.primary-skills {
+    grid-area: primary;
+}
+
+.skill__show-button {
+    grid-area: button;
+    transition: 0.4s ease-in-out;
+}
+
+.secondary-skills {
+    grid-area: secondary;
+    display: none;
+    transition: visibility 0s, opacity 0.5s linear;
+    padding-bottom: 10px;
+    margin: 0;
+    align-self: top;
+}
+
+.skill__button-closed {
+    transform: rotate(90deg);
+}
+
+.skill__button-closed:hover {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.skill__button-open {
+    transform: rotate(-90deg);
+}
+
+.skill__button-open:hover {
+    transform: rotate(-90deg) scale(1.1);
+}
+
+.skill-block__title-additional {
+    grid-area: additional;
+    margin: 0;
+    justify-self: end;
+    text-align: right;
+    display: none;
+}
