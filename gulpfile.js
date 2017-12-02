@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var minify = require('gulp-clean-css');
 var prefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
+var image = require('gulp-image');
 
 gulp.task('compile-sass', function() {
     return gulp.src('css/*.scss')
@@ -15,6 +16,12 @@ gulp.task('compile-sass', function() {
         .pipe(prefixer())
         .pipe(minify({compatibility:'*'}))
         .pipe(gulp.dest('css/'))
+});
+
+gulp.task('compress-image', function() {
+    gulp.src('./assets/sourceImages/*')
+        .pipe(image())
+        .pipe(gulp.dest('./assets'));
 });
 
 gulp.task('watch', function() {
