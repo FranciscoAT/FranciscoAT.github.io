@@ -67,9 +67,12 @@
 } 
 
 .project-card-arrow {
+    transition: all 0.5s ease-out;
+}
+
+.project-card-arrow-wrapper {
     margin: 15px;
     justify-self: end;
-    transition: all 0.5s ease-out;
     grid-row: 3;
     align-self: center;
 }
