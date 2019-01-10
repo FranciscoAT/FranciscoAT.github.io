@@ -20,6 +20,10 @@ $break-small: 673px;
 /** Colours **/
 $default-red: rgb(255,36,36);
 
+.image-background-black {
+    background-color: rgba(119,136,153,0.5);
+}
+
 /** Gutter **/
 .gutter-wrapper {
     display: grid;
