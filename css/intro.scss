@@ -1,6 +1,6 @@
 /* Intro CSS */
 .intro {
-    height: 550px;
+    height: 500px;
     grid-column: 1 / 4;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -68,14 +68,14 @@
 
 .intro-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-items: center;
 }
 
 .intro-links img {
     position: relative;
     z-index: 1;
-    max-width: 45%;
+    max-width: 55%;
     transition: 0.2s ease-in-out;
 }
 
