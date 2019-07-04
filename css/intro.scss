@@ -1,10 +1,10 @@
 /* Intro CSS */
 .intro {
-    height: 500px;
     grid-column: 1 / 4;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     overflow: hidden;
+    grid-row-gap: 30px;
 }
 
 .intro::before {

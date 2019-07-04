@@ -7,7 +7,7 @@
         "project-3 project-4";
     grid-gap: 1em 1em;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
 
     @media screen and (max-width: $break-small) {
         grid-template-areas:
@@ -26,6 +26,7 @@
     transition: 0.3s ease;
     overflow: hidden;
     display: grid;
+    grid-template-rows: 250px auto auto;
 }
 
 .project-image-link {
@@ -37,14 +38,18 @@
 
 .project-card-image {
     transition: 0.3s ease;
-    width: 100%;
     height: 250px;
+    overflow-y: hidden;
+}
+
+.image-stretch {
+    width: 100%;
 }
 
 .project-card-text {
     padding: 10px 10px 0 20px;
     grid-row: 2;
-    align-self: center;
+    align-self: start;
 }
 
 .project-card-text p:last-of-type {
@@ -64,7 +69,7 @@
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     fill: red;
-} 
+}
 
 .project-card-arrow {
     transition: all 0.5s ease-out;
@@ -74,5 +79,5 @@
     margin: 15px;
     justify-self: end;
     grid-row: 3;
-    align-self: center;
+    align-self: end;
 }
